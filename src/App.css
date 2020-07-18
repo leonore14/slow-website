@@ -1,38 +1,214 @@
-.App {
+{/* GENERAL CSS */}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Basis+Grotesque+Pro', sans-serif ;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+{/* NAVBAR CSS */}
+.navbar{
+  font-size: small;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 1.5%;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarList li{
+  margin: 15%;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .active{
+  font-weight: 450;
+}
+
+.navbarLogo{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbarLogoImg{
+  width:50%;
+  justify-self: flex-start;
+}
+
+.navbarList{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+{/* FOOTER */}
+.footer{
+  font-size: x-small;
+  margin-top: 7%;
+  margin-bottom: ;
+}
+
+.footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer li{
+  margin: 5%;
+  margin-bottom: 4%;
+}
+
+.footer a{
+  text-decoration: none;
+  color: black;
+}
+
+
+{/* HOME PAGE */}
+.home{
+  margin-top:17%;
+  margin-bottom:17%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+{/* PROJECTS PAGE */}
+.projects{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+{/* ABOUT PAGE */}
+.about{
+  margin-left: 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.theStudioTitle{
+  margin-top:15%;
+  margin-bottom: 2%;
+}
+
+.theStudioText{
+  margin-left: 3%;
+  margin-right: 45%;
+}
+
+.theVibesTitle{
+  margin-top:8%;
+  margin-bottom: 2%;
+}
+
+.theVibesText{
+  margin-left: 3%;
+  margin-right: 45%;
+}
+
+.ourTeamTitle{
+  margin-top:8%;
+  margin-bottom: 2%;
+}
+
+.ourTeamPhotos{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  margin-top: 3%;
+  margin-left: 3%;
 }
 
-.App-link {
-  color: #61dafb;
+.leonore{
+  margin-right: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.leonore img{
+  margin-bottom: 5%;
+}
+
+.damien{
+  margin-right: 5%;
+}
+
+.damien img{
+  margin-bottom: 5%;
+}
+
+.leonoreText{
+  font-size: small;
+}
+
+.damienText{
+  font-size: small;
+}
+
+
+
+{/* CONTACT PAGE */}
+.contact{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
+}
+
+
+{/* COPYRIGHT PAGE */}
+.copyright{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
+}
+
+{/* GENERAL TERMS PAGE */}
+.generalTerms{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
+}
+
+
+{/* PERSONAL DATA PAGE */}
+.personalData{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
+}
+
+
+
+
+
+
+{/* RESPONSIVENESS */}
+
+
+{/* ABOUT PAGE */}
+
+@media screen and (max-width: 575px){
+
+  .ourTeamPhotos{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .damien{
+    margin-top: 8%;
+    margin-bottom:8%;
   }
+
 }
