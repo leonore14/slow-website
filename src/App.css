@@ -36,10 +36,6 @@ body {
   width: 100%;
 }
 
-.navbarList li{
-  margin: 15%;
-}
-
 .navbar a{
   text-decoration: none;
   color: black;
@@ -60,15 +56,21 @@ body {
 
 .navbarList{
   display: flex;
-  justify-self: flex-end;
+  justify-content: flex-end;
+  margin-right: 7%;
+  margin-left: auto;
+}
+
+.navbarList li{
+  margin: 15%;
 }
 
 
 {/* FOOTER */}
 .footer{
   font-size: x-small;
-  margin-top: 7%;
-  margin-bottom: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .footer ul{
