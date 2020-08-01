@@ -1,0 +1,90 @@
+{/* HOME PAGE */}
+
+
+.home{
+    background-image: url("./images/sunset2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.homeText1{
+    margin-top: 34%;
+    margin-left: 4%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+}
+
+.homeTitle{
+    font-size: 1.6em;
+}
+
+.homeP1{
+    margin-top: 2%;
+}
+
+
+
+.home2{
+    background-image: url("./images/homePalm.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.homeText2{
+    margin-top: 38%;
+    margin-left: 4%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+}
+
+.homeTitle2{
+    color: white;
+    font-size: 1.2em;
+}
+
+.homeP2{
+    margin-top: 2%;
+    color: white;
+}
+
+
+
+.home3{
+    background-image: url("./images/homeVinyl.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.homeText3{
+    margin-top: 40%;
+    margin-left: 4%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+}
+
+.homeTitle3{
+    font-size: 1.2em;
+}
+
+.homeP3{
+    margin-top: 2%;
+}
+
+
+
+.home4{
+    background-image: url("./images/homeHand.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

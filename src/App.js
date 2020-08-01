@@ -14,7 +14,7 @@ import PersonalData from './components/PersonalData';
 
 function App() {
   return (
-      <>
+    <div className="appDiv">
       <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
@@ -26,7 +26,7 @@ function App() {
         <Route path='/personalData' component={PersonalData} />
       </Switch>
       <Footer />
-      </>
+    </div>
   );
 }
 

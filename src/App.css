@@ -12,6 +12,12 @@ body {
   text-decoration: none;
 }
 
+.appDiv{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 
 {/* NAVBAR CSS */}
 .navbar{
@@ -19,17 +25,15 @@ body {
   margin-right: 4%;
   margin-left: 4%;
   margin-top: 1.5%;
+  width: 100%;
+  position: absolute;
 }
 
 .navbar ul{
   list-style: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.navbarList li{
-  margin: 15%;
+  width: 100%;
 }
 
 .navbar a{
@@ -42,8 +46,7 @@ body {
 }
 
 .navbarLogo{
-  display: flex;
-  justify-content: flex-start;
+  align-self: flex-start;
 }
 
 .navbarLogoImg{
@@ -54,14 +57,20 @@ body {
 .navbarList{
   display: flex;
   justify-content: flex-end;
+  margin-right: 7%;
+  margin-left: auto;
+}
+
+.navbarList li{
+  margin: 15%;
 }
 
 
 {/* FOOTER */}
 .footer{
   font-size: x-small;
-  margin-top: 7%;
-  margin-bottom: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .footer ul{
@@ -81,12 +90,6 @@ body {
 }
 
 
-{/* HOME PAGE */}
-.home{
-  margin-top:17%;
-  margin-bottom:17%;
-  text-align: center;
-}
 
 
 {/* PROJECTS PAGE */}
