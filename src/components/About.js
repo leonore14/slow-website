@@ -1,6 +1,7 @@
 import React from 'react';
 import leonore from './images/leonore.jpg';
 import damien from './images/damien.jpg';
+import './AboutCss.css';
 
 
 const About = () => {
