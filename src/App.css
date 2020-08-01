@@ -12,6 +12,12 @@ body {
   text-decoration: none;
 }
 
+.appDiv{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 
 {/* NAVBAR CSS */}
 .navbar{
@@ -19,13 +25,15 @@ body {
   margin-right: 4%;
   margin-left: 4%;
   margin-top: 1.5%;
+  width: 100%;
+  position: absolute;
 }
 
 .navbar ul{
   list-style: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .navbarList li{
@@ -42,8 +50,7 @@ body {
 }
 
 .navbarLogo{
-  display: flex;
-  justify-content: flex-start;
+  align-self: flex-start;
 }
 
 .navbarLogoImg{
@@ -53,7 +60,7 @@ body {
 
 .navbarList{
   display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
 }
 
 
@@ -81,12 +88,6 @@ body {
 }
 
 
-{/* HOME PAGE */}
-.home{
-  margin-top:17%;
-  margin-bottom:17%;
-  text-align: center;
-}
 
 
 {/* PROJECTS PAGE */}

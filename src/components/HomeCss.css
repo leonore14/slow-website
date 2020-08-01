@@ -1,0 +1,63 @@
+{/* HOME PAGE */}
+
+
+.home{
+    background-image: url("./images/sunset1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.home2{
+    background-image: url("./images/sunset2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.home3{
+    background-image: url("./images/sunset2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.homeTitle{
+    margin-left: 10%;
+    margin-top:25%;
+    margin-bottom: 2%;
+    font-size: xx-large;
+}
+
+.homeTitle2{
+    margin-left: 10%;
+    margin-top:25%;
+    margin-bottom: 2%;
+}
+
+.homeTitle3{
+    margin-left: 10%;
+    margin-top:25%;
+    margin-bottom: 2%;
+}
+
+.homeText1{
+    margin-left: 10%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+}
+
+.homeText2{
+    margin-left: 10%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+}
+
+.homeText3{
+    margin-left: 10%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+}
