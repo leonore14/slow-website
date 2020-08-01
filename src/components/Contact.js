@@ -7,44 +7,17 @@ class Contact extends React.Component {
 
     constructor(props) {
         super(props);
+        this.submitForm = this.submitForm.bind(this);
         this.state = {
-            name: '',
-            email: '',
-            phone: '',
-            message: ''
-          }
+            status: ""
+        };
+    }
     
-        this.onNameChange = this.onNameChange.bind(this);
-        this.onEmailChange = this.onEmailChange.bind(this);
-        this.onPhoneChange = this.onPhoneChange.bind(this);
-        this.onMessageChange = this.onMessageChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-      }
-
-    onNameChange(event) {
-        this.setState({name: event.target.value})
-      }
+    render() {
+    const { status } = this.state;
     
-    onEmailChange(event) {
-        this.setState({email: event.target.value})
-      }
+    return (
 
-    onPhoneChange(event) {
-        this.setState({phone: event.target.value})
-      }
-    
-    onMessageChange(event) {
-        this.setState({message: event.target.value})
-      }
-    
-    handleSubmit(event) {
-        alert('Thanks ' + this.state.name + ' We have well received your message & will reply you very soon !');
-        event.preventDefault();   
-      }
-
-
-    render(){
-    return(
         <div className="contact">
             
             <div>
@@ -69,12 +42,17 @@ class Contact extends React.Component {
                 <div className="contactFormTitle">
                     <h2>ContactUs.</h2>
                 </div>
-                <form className="contactForm" onSubmit={this.handleSubmit} method="POST">
-                    <div className="formBoxDiv"><input type="text" value={this.state.name} placeholder="Name*" onChange={this.onNameChange} className="formBox" /></div>
-                    <div className="formBoxDiv"><input type="email" value={this.state.email} placeholder="Email*" onChange={this.onEmailChange} className="formBox" /></div>
-                    <div className="formBoxDiv"><input type="text" value={this.state.phone} placeholder="Phone" onChange={this.onPhoneChange} className="formBox" /></div>
-                    <div className="formBoxDiv"><textarea type="text" value={this.state.message} placeholder="Message*" onChange={this.onMessageChange} className="formBoxMessage" rowSpan={3} /></div>
-                    <button type="submit" className="formButton">Send.</button>
+                <form className="contactForm"
+                        onSubmit={this.submitForm}
+                        action="https://formspree.io/xpzybpkp"
+                        method="POST"
+                >
+                        <div className="formBoxDiv"><input type="text" placeholder="Name*" name="title" className="formBox" /></div>
+                        <div className="formBoxDiv"><input type="email" placeholder="Email*" name="email" className="formBox" /></div>
+                        <div className="formBoxDiv"><input type="text" placeholder="Phone" name="phone" className="formBox" /></div>
+                        <div className="formBoxDiv"><textarea type="text" placeholder="Message*" name="message" className="formBoxMessage" rowSpan={3} /></div>
+                        {status === "SUCCESS" ? <p>Thanks! We will reply you soon !</p> : <div className="formButtonBox"><button className="formButton">Send.</button></div>}
+                        {status === "ERROR" && <p>Ooops! There was an error. Please try again to fill in our form !</p>}  
                 </form>
             </div>
 
@@ -98,12 +76,29 @@ class Contact extends React.Component {
                     </div>
                 </div>
             </div>
-
-
         </div>
-    )
-    
-}
+        )
+    }
+
+    submitForm(ev) {
+        ev.preventDefault();
+        const form = ev.target;
+        const data = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = () => {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+            form.reset();
+            this.setState({ status: "SUCCESS" });
+        } else {
+            this.setState({ status: "ERROR" });
+        }
+        };
+        xhr.send(data);
+    }
+
 }
 
 export default Contact ;
