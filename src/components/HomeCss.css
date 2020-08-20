@@ -3,11 +3,20 @@
 
 .home{
     background-image: url("./images/sunset2.jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+
+.home--inside-scroller {
+    position: absolute;
+    right: 20px;
+    top: 100px;
 }
 
 .homeText1{
@@ -29,11 +38,12 @@
 
 .home2{
     background-image: url("./images/homePalm.jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
+    width: 100vw;
+    display: flex;
 }
 
 .homeText2{
@@ -57,11 +67,12 @@
 
 .home3{
     background-image: url("./images/homeVinyl.jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
+    width: 100vw;
+    display: flex;
 }
 
 .homeText3{
@@ -83,8 +94,10 @@
 
 .home4{
     background-image: url("./images/homeHand.jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
+    display: flex;
 }
